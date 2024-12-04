@@ -1,0 +1,34 @@
+body {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+div {
+    height: 70px;
+    width: 70px;
+    
+    border: 8px solid rgb(238, 239, 234);
+    border-radius: 50%;
+    border-top: 8px dotted rgb(31, 41, 238);
+    animation-name: Load;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+
+}
+
+@keyframes Load {
+
+    from{
+        transform: rotate(0deg);
+    }
+    
+    to{
+        transform: rotate(360deg);
+    }
+    
+}
